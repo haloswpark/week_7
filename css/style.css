@@ -1,0 +1,356 @@
+.wrapper {
+    height: 100vh;
+}
+
+.body {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+}
+
+.Halo {
+  position: absolute;
+  left: 15.58%;
+  right: 69.83%;
+  top: 26.48%;
+  bottom: 62.04%;
+  
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+
+  color: #FFFFFF;
+}
+
+.Effect { 
+  position: absolute;
+  left: 68.5%;
+  right: 15.58%;
+  top: 66.67%;
+  bottom: 21.85%;
+
+  text-justify: Halo;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: right;
+
+  color: #FFFFFF;
+}
+
+.box1 {
+    position: absolute;
+    width: 438px;
+    height: 72px;
+    left: 187px;
+    top: 249px;
+    
+    background-color: #C4C4C4;
+    border-radius: 35px;
+    transition: 1s;
+    }
+
+.box1:hover {
+    background-color: #5100fe;
+        }
+ 
+
+/* Rectangle 24 */
+
+.box2 {
+    position: absolute;
+    width: 373px;
+    height: 72px;
+    left: 640px;
+    top: 249px;
+    border-radius: 35px;
+    background-color: #C4C4C4;
+    transition: 1s;
+}
+
+.box2:hover {
+    background-color: #EA5260;
+        }
+
+.box3{
+    position: absolute;
+    width: 474px;
+    height: 72px;
+    left: 187px;
+    top: 334px;
+    
+    border-radius: 35px;
+    background: #C4C4C4;
+    transition: 1s;
+}
+
+.box3:hover{
+    background-color: #00FFFF;
+}
+
+
+.box4{
+    position: absolute;
+    width: 248px;
+    height: 72px;
+    left: 674px;
+    top: 334px;
+
+    border-radius: 35px;
+    background: #C4C4C4;
+    transition: 1s;
+}
+
+.box4:hover {
+    background-color: #29ff7f;
+}
+
+
+
+.box5 {
+    position: absolute;
+    width: 78px;
+    height: 72px;
+    left: 935px;
+    top: 334px;    
+
+    border-radius: 35px;
+    background: #C4C4C4;
+    transition: 1s;
+}
+
+.box5:hover {
+    background-color: #F3F580;
+}
+
+#image {
+  position: absolute;
+  left: 65.48%;
+  right: 6.68%;
+  top: 27.7%;
+  bottom: 37.42%;   
+  -webkit-animation:rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to   {-webkit-transform: rotate(359deg);}
+}
+.line1{
+    position: absolute;
+    width: 660px;
+    height: 7px;
+    left: 346px;
+    top: 203px;
+    
+    background: #FFFFFF;
+}
+
+
+.line2{
+    position: absolute;
+    width: 615px;
+    height: 7px;
+    left: 187px;
+    top: 454px;
+    
+    background: #FFFFFF;
+}
+
+.carousel1{
+    position: absolute;
+    width: 2031.32px;
+    height: 88px;
+    left: -54.51px;
+    top: 867px;
+
+    background: #DBDBDB;
+    transform: rotate(0.97deg);
+}
+
+/* 
+==================
+==================
+Global
+==================
+==================
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Remove Cursor */
+    cursor: none;
+  }
+  
+  html, body {
+    position: relative;
+    margin: 0;
+    /* Font */
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    line-height: 1.7em;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+  
+  /* Layout */
+  section {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+  
+  /* Headings */
+  h1 {
+    margin: 1.8em 0 1.2em 0;
+    font-size: 2.8em;
+    line-height: .94em;
+    font-weight: 200;
+  }
+  
+  /* Links */
+  a {
+    color: #FAB599;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #FAB599;
+  }
+  
+  .goo-container a {
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 1.4em 2.6em;
+    letter-spacing: .12em;
+    background: #EEEEEE;
+    border: none;
+    outline: none;
+    transition: ease 2s;
+  }
+  
+  button:hover {
+    background: #D1D1D1;
+  }
+  
+  
+  /* 
+  ==================
+  ==================
+  Gooey Effect
+  ==================
+  ==================
+  */
+  .goo-container {
+    position: relative;
+  }
+  
+  .goo-box {
+    position: absolute;
+    height: 100%;
+    width: 140%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin-left: -20%;
+    background: linear-gradient(90deg, #FAEFCC, #FAB599);
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+    transform: translateZ(0);
+    z-index: -1;
+  }
+  
+  /* Remove undesired SVG space */
+  svg {
+    width: 0;
+    height: 0;
+    /*display: none;*/ /* Don`t use "display none" or Firefox will omit the effect. */
+  }
+  
+  
+  /* 
+  ==================
+  ==================
+  Cursor
+  ==================
+  ==================
+  */
+  .cursor {
+    pointer-events: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: #FAB599;
+    will-change: left, top, transform, background; 
+    transition: linear 20ms;
+    transform: translateZ(0);
+    z-index: 99999;
+    /* Hide Element */
+    left: -500%;
+  }
+  
+  .true-cursor {
+    background: rgba(250,181,153,.35);
+  }
+  
+  /* Cursor animations: True Cursor */
+  @keyframes truepointeron {
+    0% {
+      transform: scale(1);
+      background: rgba(250,181,153,.35);
+    }
+    100% {
+      transform: scale(.3);
+      background: #EF8B8B;
+    }
+  }
+  
+  @keyframes truepointeroff {
+    0% {
+      transform: scale(.3);
+      background: #EF8B8B;
+    }
+    100% {
+      transform: scale(1);
+      background: rgba(250,181,153,.35);
+    }
+  }
+  
+  /* Cursor animations: Gooey Cursor */
+  @keyframes goopointeron {
+    0% {
+      transform: scale(1);
+      background: #FAB599;
+    }
+    100% {
+      transform: scale(0);
+      background: #EF8B8B;
+    }
+  }
+  
+  @keyframes goopointeroff {
+    0% {
+      transform: scale(0);
+      background: #EF8B8B;
+    }
+    100% {
+      transform: scale(1);
+      background: #FAB599;
+    }
+  }
